@@ -1,41 +1,12 @@
-import { HeadContent, Scripts, createRootRoute } from '@tanstack/react-router'
+import { createRootRoute, Outlet } from '@tanstack/react-router'
+import '@/assets/styles/index.css'
 
 export const Route = createRootRoute({
-  head: () => ({
-    meta: [
-      {
-        charSet: 'utf-8',
-      },
-      {
-        name: 'viewport',
-        content: 'width=device-width, initial-scale=1',
-      },
-      {
-        title: 'TanStack Start Starter',
-      },
-    ],
-    links: [
-      {
-        rel: 'stylesheet',
-        href: '@/styles/index.css',
-      },
-    ],
-  }),
-
-  shellComponent: RootDocument,
+  component: () => {
+    return (
+      <div className={'size-full bg-[red]'}>
+        <Outlet />
+      </div>
+    )
+  },
 })
-
-function RootDocument({ children }: { children: React.ReactNode }) {
-  return (
-    <html lang="ko">
-      <head>
-        <HeadContent />
-      </head>
-      <body>
-        {children}
-
-        <Scripts />
-      </body>
-    </html>
-  )
-}

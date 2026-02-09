@@ -1,4 +1,4 @@
 import { createFileRoute } from '@tanstack/react-router'
-import Page from '@/app/pages/Main'
+import Page from '@/components/pages/Home'
 
-export const IndexRoute = createFileRoute('/')({ component: Page })
+export const Route = createFileRoute('/')({ component: Page })

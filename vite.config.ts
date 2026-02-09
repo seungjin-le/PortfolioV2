@@ -1,12 +1,14 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
 import viteTsConfigPaths from 'vite-tsconfig-paths'
 import { fileURLToPath, URL } from 'url'
 import tailwindcss from '@tailwindcss/vite'
 import svgr from 'vite-plugin-svgr'
 import { tanstackRouter } from '@tanstack/router-plugin/vite'
+import viteReact from '@vitejs/plugin-react'
 
 const config = defineConfig({
+  server: { host: '0.0.0.0', open: true, cors: true },
+
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
@@ -16,7 +18,7 @@ const config = defineConfig({
     tanstackRouter({ target: 'react', autoCodeSplitting: true }),
     viteTsConfigPaths({ projects: ['./tsconfig.json'] }),
     tailwindcss(),
-    react({ babel: { plugins: ['babel-plugin-react-compiler'] }, jsxRuntime: 'automatic' }),
+    viteReact({ babel: { plugins: ['babel-plugin-react-compiler'] } }),
     svgr(),
   ],
   build: {
