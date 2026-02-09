@@ -1,11 +1,10 @@
 import { defineConfig } from 'vite'
-import { devtools } from '@tanstack/devtools-vite'
-import { tanstackStart } from '@tanstack/react-start/plugin/vite'
-import viteReact from '@vitejs/plugin-react'
+import react from '@vitejs/plugin-react'
 import viteTsConfigPaths from 'vite-tsconfig-paths'
 import { fileURLToPath, URL } from 'url'
-
 import tailwindcss from '@tailwindcss/vite'
+import svgr from 'vite-plugin-svgr'
+import { tanstackRouter } from '@tanstack/router-plugin/vite'
 
 const config = defineConfig({
   resolve: {
@@ -14,15 +13,15 @@ const config = defineConfig({
     },
   },
   plugins: [
-    devtools(),
-    // this is the plugin that enables path aliases
-    viteTsConfigPaths({
-      projects: ['./tsconfig.json'],
-    }),
+    tanstackRouter({ target: 'react', autoCodeSplitting: true }),
+    viteTsConfigPaths({ projects: ['./tsconfig.json'] }),
     tailwindcss(),
-    tanstackStart(),
-    viteReact(),
+    react({ babel: { plugins: ['babel-plugin-react-compiler'] }, jsxRuntime: 'automatic' }),
+    svgr(),
   ],
+  build: {
+    chunkSizeWarningLimit: 1300,
+  },
 })
 
 export default config
