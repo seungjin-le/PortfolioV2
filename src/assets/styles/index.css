@@ -3,14 +3,10 @@
 @layer base {
   html,
   body {
-  min-height: 100dvh;
-  min-width: 100dvw;
+    min-width: 100dvw;
+    width: 100%;
   }
-
-
-
 }
-
 
 @utility flex-col-center {
   @apply flex flex-col items-center justify-center;

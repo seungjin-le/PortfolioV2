@@ -1,6 +1,6 @@
 const Page = () => {
   return (
-    <div>
+    <div className="flex-col-center min-h-dvh w-full">
       <h1>Main</h1>
     </div>
   )
