@@ -8,6 +8,275 @@
   }
 }
 
+@custom-variant m {
+  @media (width <= 390px) {
+    @slot;
+  }
+}
+
+@theme {
+  --breakpoint-*: initial;
+  --spacing-maxW: 1920px;
+  --spacing-content: 1400px;
+
+  /*--------------------- Head ---------------------*/
+
+  --text-h48: 48px;
+  --text-h48--line-height: 48px;
+  --text-h48--font-weight: 600;
+
+  --text-h46: 46px;
+  --text-h46--line-height: 46px;
+  --text-h46--font-weight: 600;
+
+  --text-h40: 40px;
+  --text-h40--line-height: 40px;
+  --text-h40--font-weight: 600;
+
+  --text-h34: 34px;
+  --text-h34--line-height: 34px;
+  --text-h34--font-weight: 600;
+
+  --text-h32: 32px;
+  --text-h32--line-height: 32px;
+  --text-h32--font-weight: 600;
+
+  --text-h28: 28px;
+  --text-h28--line-height: 28px;
+  --text-h28--font-weight: 600;
+
+  --text-h24: 24px;
+  --text-h24--line-height: 24px;
+  --text-h24--font-weight: 600;
+
+  /*--------------------- Head( Mobile ) ---------------------*/
+
+  --text-mh30: 30px;
+  --text-mh30--line-height: 30px;
+  --text-mh30--font-weight: 600;
+
+  --text-mh30p: 30px;
+  --text-mh30p--line-height: 42px;
+  --text-mh30p--font-weight: 600;
+
+  --text-mh24: 24px;
+  --text-mh24--line-height: 24px;
+  --text-mh24--font-weight: 600;
+
+  --text-mh24p: 24px;
+  --text-mh24p--line-height: 32px;
+  --text-mh24p--font-weight: 600;
+
+  --text-mh00: 00px;
+  --text-mh00--line-height: 00px;
+  --text-mh00--font-weight: 600;
+
+  /*--------------------- Title ---------------------*/
+
+  --text-t34: 34px;
+  --text-t34--line-height: 34px;
+  --text-t34--font-weight: 500;
+
+  --text-t32: 32px;
+  --text-t32--line-height: 32px;
+  --text-t32--font-weight: 500;
+
+  --text-t28: 28px;
+  --text-t28--line-height: 28px;
+  --text-t28--font-weight: 500;
+
+  --text-t28p: 28px;
+  --text-t28p--line-height: 40px;
+  --text-t28p--font-weight: 500;
+
+  --text-t24: 24px;
+  --text-t24--line-height: 24px;
+  --text-t24--font-weight: 500;
+
+  --text-t20: 20px;
+  --text-t20--line-height: 20px;
+  --text-t20--font-weight: 500;
+
+  --text-t20p: 20px;
+  --text-t20p--line-height: 28px;
+  --text-t20p--font-weight: 500;
+
+  --text-t18: 18px;
+  --text-t18--line-height: 18px;
+  --text-t18--font-weight: 500;
+
+  --text-t18p: 18px;
+  --text-t18p--line-height: 26px;
+  --text-t18p--font-weight: 500;
+
+  --text-t16: 16px;
+  --text-t16--line-height: 16px;
+  --text-t16--font-weight: 500;
+
+  /*--------------------- Title( Mobile ) ---------------------*/
+
+  --text-mt24: 24px;
+  --text-mt24--line-height: 24px;
+  --text-mt24--font-weight: 500;
+
+  --text-mt24p: 24px;
+  --text-mt24p--line-height: 32px;
+  --text-mt24p--font-weight: 500;
+
+  --text-mt22: 22px;
+  --text-mt22--line-height: 22px;
+  --text-mt22--font-weight: 500;
+
+  --text-mt22p: 22px;
+  --text-mt22p--line-height: 32px;
+  --text-mt22p--font-weight: 500;
+
+  --text-mt20: 20px;
+  --text-mt20--line-height: 20px;
+  --text-mt20--font-weight: 500;
+
+  --text-mt20p: 20px;
+  --text-mt20p--line-height: 30px;
+  --text-mt20p--font-weight: 500;
+
+  --text-mt18: 18px;
+  --text-mt18--line-height: 18px;
+  --text-mt18--font-weight: 500;
+
+  --text-mt18p: 18px;
+  --text-mt18p--line-height: 26px;
+  --text-mt18p--font-weight: 500;
+
+  --text-mt16: 16px;
+  --text-mt16--line-height: 16px;
+  --text-mt16--font-weight: 500;
+
+  --text-mt16p: 16px;
+  --text-mt16p--line-height: 24px;
+  --text-mt16p--font-weight: 500;
+
+  --text-mt14: 14px;
+  --text-mt14--line-height: 14px;
+  --text-mt14--font-weight: 500;
+
+  /*--------------------- Body( Mobile ) ---------------------*/
+
+  --text-b24: 24px;
+  --text-b24--line-height: 24px;
+  --text-b24--font-weight: 400;
+
+  --text-b20: 20px;
+  --text-b20--line-height: 20px;
+  --text-b20--font-weight: 400;
+
+  --text-b20p: 20px;
+  --text-b20p--line-height: 28px;
+  --text-b20p--font-weight: 400;
+
+  --text-b18: 18px;
+  --text-b18--line-height: 18px;
+  --text-b18--font-weight: 400;
+
+  --text-b18p: 18px;
+  --text-b18p--line-height: 26px;
+  --text-b18p--font-weight: 400;
+
+  --text-b16: 16px;
+  --text-b16--line-height: 16px;
+  --text-b16--font-weight: 400;
+
+  --text-b16p: 16px;
+  --text-b16p--line-height: 24px;
+  --text-b16p--font-weight: 400;
+
+  --text-b14: 14px;
+  --text-b14--line-height: 14px;
+  --text-b14--font-weight: 400;
+
+  --text-b14p: 14px;
+  --text-b14p--line-height: 22px;
+  --text-b14p--font-weight: 400;
+
+  /*--------------------- Body ---------------------*/
+
+  --text-mb20: 20px;
+  --text-mb20--line-height: 20px;
+  --text-mb20--font-weight: 400;
+
+  --text-mb20p: 20px;
+  --text-mb20p--line-height: 30px;
+  --text-mb20p--font-weight: 400;
+
+  --text-mb18: 18px;
+  --text-mb18--line-height: 18px;
+  --text-mb18--font-weight: 400;
+
+  --text-mb18p: 18px;
+  --text-mb18p--line-height: 26px;
+  --text-mb18p--font-weight: 400;
+
+  --text-mb16: 16px;
+  --text-mb16--line-height: 16px;
+  --text-mb16--font-weight: 400;
+
+  --text-mb16p: 16px;
+  --text-mb16p--line-height: 2px;
+  --text-mb16p--font-weight: 400;
+
+  --text-mb14: 14px;
+  --text-mb14--line-height: 14px;
+  --text-mb14--font-weight: 400;
+
+  --text-mb14p: 14px;
+  --text-mb14p--line-height: 22px;
+  --text-mb14p--font-weight: 400;
+
+  /*--------------------- color ---------------------*/
+
+  /*--------------------- primary ---------------------*/
+  --color-p50: #fff8ee;
+  --color-p100: #ffe1b0;
+  --color-p200: #ffd38a;
+  --color-p300: #ffbf54;
+  --color-p400: #ffb233;
+  --color-p500: #ff9f00;
+  --color-p600: #e89100;
+  --color-p700: #b57100;
+  --color-p800: #8c5700;
+  --color-p900: #6b4300;
+
+  /*--------------------- secondary ---------------------*/
+  --color-s50: #f1f8ea;
+  --color-s100: #d2e9be;
+  --color-s200: #bddf9e;
+  --color-s300: #9fd072;
+  --color-s400: #8cc756;
+  --color-s500: #6fb92c;
+  --color-s600: #65a828;
+  --color-s700: #4f831f;
+  --color-s800: #3d6618;
+  --color-s900: #2f4e12;
+
+  /*--------------------- neutral ---------------------*/
+
+  --color-n50: #f5f7fb;
+  --color-n100: #f5f7fb;
+  --color-n200: #e8eaed;
+  --color-n300: #dadce0;
+  --color-n400: #bdc1c6;
+  --color-n500: #9aa0a6;
+  --color-n600: #80868b;
+  --color-n700: #5f6368;
+  --color-n800: #2e3134;
+  --color-n900: #202124;
+
+  --color-white: #fff;
+  --color-black: #000;
+
+  --color-red: #f04545;
+  --color-redLight: #ffe8e8;
+}
+
 @utility flex-col-center {
   @apply flex flex-col items-center justify-center;
 }
