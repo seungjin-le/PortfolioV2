@@ -1,20 +1,20 @@
 export const PROFILE = {
-  name: '김개발',
-  nameEn: 'Gaebal Kim',
+  name: '이승진',
+  nameEn: 'Seungjin Lee',
   role: 'Frontend Developer',
   experience: '3년차',
-  email: 'gaebal.dev@gmail.com',
-  github: 'https://github.com/gaebal-dev',
-  blog: 'https://blog.gaebal.dev',
-  phone: '010-1234-5678',
-  location: '서울, 대한민국',
+  email: 'dltmdwls@gmail.com',
+  github: '',
+  blog: '',
+  phone: '',
+  location: '대한민국',
   summary:
-    '사용자 경험을 최우선으로 생각하는 3년차 프론트엔드 개발자입니다. React와 TypeScript 기반의 모던 웹 애플리케이션을 설계하고, 성능 최적화와 접근성을 고려한 UI를 구현합니다.',
+    'React와 Next.js를 중심으로 웹 서비스와 관리자 페이지, 하이브리드 앱까지 경험하며 사용자 경험과 유지보수성을 함께 고려한 코드를 지향하는 프론트엔드 개발자입니다.',
   introduction: [
-    '복잡한 비즈니스 로직을 직관적인 UI로 풀어내는 것을 좋아합니다.',
-    'CI/CD 파이프라인 구축부터 AWS 배포까지 프론트엔드 인프라 전반을 다룰 수 있습니다.',
-    '코드 리뷰와 기술 공유를 통해 팀 전체의 개발 역량을 높이는 데 기여합니다.',
-    '새로운 기술 도입 시 팀과의 합의, 문서화, 점진적 마이그레이션을 중시합니다.',
+    '고등학교 3학년 때부터 반도체 업계에서 약 4년간 근무하며 빠른 적응력과 문제 해결 능력을 쌓았고, 생산관리 시스템을 개발하던 개발자들의 일을 보며 프론트엔드 개발자의 길을 선택했습니다.',
+    '알고리즘 문제 풀이와 코드 리팩터링을 통해 구현 위주의 개발에서 한 단계 나아가, 구조와 성능을 의식하는 개발자로 성장하고자 노력하고 있습니다.',
+    '배운 내용은 블로그에 정리해 지식을 체계적으로 관리하고, 비전공자로서 모르는 것을 인정하고 적극적으로 질문·학습하는 태도를 강점으로 삼고 있습니다.',
+    'CI/CD 파이프라인 구축부터 단일 레포-다중 도메인 빌드 구조 설계까지, 프론트엔드 개발 전반을 다루고 있습니다.',
   ],
 }
 
@@ -32,8 +32,8 @@ export const SKILLS: SkillCategory[] = [
   {
     category: 'Core',
     skills: [
-      { name: 'TypeScript', level: 5 },
-      { name: 'JavaScript (ES6+)', level: 5 },
+      { name: 'JavaScript', level: 5 },
+      { name: 'TypeScript', level: 4 },
       { name: 'HTML / CSS', level: 5 },
     ],
   },
@@ -41,36 +41,35 @@ export const SKILLS: SkillCategory[] = [
     category: 'Framework & Library',
     skills: [
       { name: 'React', level: 5 },
-      { name: 'Next.js (App Router)', level: 4 },
-      { name: 'React Hook Form', level: 4 },
+      { name: 'Next.js', level: 4 },
+      { name: 'Vue / Nuxt', level: 2 },
+      { name: 'Flutter', level: 3 },
       { name: 'TanStack Query', level: 4 },
+    ],
+  },
+  {
+    category: 'State Management',
+    skills: [
       { name: 'Zustand', level: 4 },
+      { name: 'Redux', level: 3 },
+      { name: 'Recoil', level: 3 },
     ],
   },
   {
     category: 'Styling',
     skills: [
-      { name: 'Tailwind CSS', level: 5 },
+      { name: 'Tailwind CSS', level: 4 },
       { name: 'Styled Components', level: 4 },
-      { name: 'CSS Modules', level: 4 },
+      { name: 'SASS / SCSS', level: 3 },
     ],
   },
   {
-    category: 'Tooling & Infra',
+    category: 'Tooling & Collaboration',
     skills: [
-      { name: 'Vite / Webpack', level: 4 },
-      { name: 'Docker', level: 3 },
-      { name: 'GitHub Actions', level: 4 },
-      { name: 'AWS (S3, CloudFront)', level: 3 },
-      { name: 'Nginx', level: 3 },
-    ],
-  },
-  {
-    category: 'Testing & Quality',
-    skills: [
-      { name: 'Vitest / Jest', level: 4 },
-      { name: 'React Testing Library', level: 4 },
+      { name: 'Git / GitHub / GitLab', level: 4 },
+      { name: 'GitHub Actions', level: 3 },
       { name: 'Storybook', level: 3 },
+      { name: 'Slack / Notion', level: 4 },
     ],
   },
 ]
@@ -86,44 +85,43 @@ export interface Experience {
 
 export const EXPERIENCES: Experience[] = [
   {
-    company: '(주) 테크스타트',
-    role: 'Frontend Developer',
-    period: '2024.03 — 현재',
-    description: 'B2B SaaS 플랫폼의 프론트엔드 개발 및 디자인 시스템 구축',
+    company: '비유바움 주식회사',
+    role: '프론트엔드 대리',
+    period: '2023.10 — 재직중',
+    description:
+      '소상공인 대상 통합 관리 서비스, 협회/교육 플랫폼, 자회사 사이트 등 다수 프로젝트 프론트엔드 개발',
     achievements: [
-      'Next.js App Router 기반 대시보드 신규 개발, 초기 로딩 속도 40% 개선',
-      '공통 컴포넌트 라이브러리(30+ 컴포넌트) 설계 및 Storybook 문서화',
-      'React Hook Form + Zod 기반 복잡한 멀티스텝 폼 구현',
-      'GitHub Actions CI/CD 파이프라인 구축, 배포 자동화',
-      'AWS S3 + CloudFront 정적 배포 인프라 세팅',
+      'Flutter + React.js 기반 하이브리드 앱 개발 및 네이티브-WebView 양방향 통신 구현',
+      'Next.js + TailwindCSS 기반 멀티 플랫폼(협회/교육 사이트 + 백오피스) 개발, 화면의 80% 이상 단독 설계·구현',
+      '단일 레포-다중 도메인 빌드 구조 설계로 유지보수 시 중복 수정 파일 수 50% 이상 절감',
+      'GitHub Actions CI/CD 파이프라인으로 빌드·테스트·배포 자동화',
     ],
     techStack: [
+      'React.js',
       'Next.js',
       'TypeScript',
+      'Flutter',
+      'TailwindCSS',
+      'Styled Components',
       'TanStack Query',
       'Zustand',
-      'Tailwind CSS',
+      'Recoil',
       'Storybook',
+      'GitHub Actions',
     ],
   },
   {
-    company: '(주) 웹크래프트',
-    role: 'Frontend Developer',
-    period: '2023.01 — 2024.02',
-    description: '이커머스 플랫폼 및 어드민 시스템 프론트엔드 개발',
+    company: '(주) OKPOS',
+    role: '프론트엔드 개발자',
+    period: '2022.10 — 2023.04',
+    description: '파트너 센터 백오피스 시스템 전반 개발',
     achievements: [
-      'React + TypeScript 기반 이커머스 웹앱 개발 (MAU 50K+)',
-      '상품 검색 필터 성능 최적화 (렌더링 시간 60% 감소)',
-      'Webpack → Vite 마이그레이션으로 빌드 시간 70% 단축',
-      '주니어 개발자 2명 온보딩 및 코드 리뷰 담당',
+      '공통 컴포넌트 설계 및 구현을 통한 재사용성 향상',
+      '회원 관리, 공지사항, 영업 대리점, 발주 신청, 제품 유지보수, 교육 관리 등 다수 관리 시스템 개발',
+      'Chart.js 기반 데이터 시각화 및 그래프 구현',
+      'Props 기반 컴포넌트 구조화로 유지보수성 개선',
     ],
-    techStack: [
-      'React',
-      'TypeScript',
-      'Redux Toolkit',
-      'Styled Components',
-      'Vite',
-    ],
+    techStack: ['React.js', 'JavaScript', 'Chart.js'],
   },
 ]
 
@@ -139,60 +137,112 @@ export interface Project {
 
 export const PROJECTS: Project[] = [
   {
-    title: 'DataFlow Dashboard',
+    title: '소상공인 대상 통합 관리 서비스',
     description:
-      '실시간 데이터 시각화 대시보드. 복잡한 차트와 테이블을 조합한 B2B 분석 도구.',
-    period: '2024.06 — 2024.12',
-    role: '프론트엔드 리드 (3인)',
+      'Flutter + React.js 기반 하이브리드 앱. 직원 관리, 급여·세무, 출퇴근 관리 등 소상공인 통합 관리 기능 제공.',
+    period: '2023.10 — 재직중',
+    role: '프론트엔드 대리 · 비유바움 주식회사',
     highlights: [
-      'WebSocket 기반 실시간 데이터 스트리밍 구현',
-      'Virtual Scroll로 10만 행 테이블 렌더링 최적화',
-      'React.lazy + Suspense 코드 스플리팅 적용, 번들 크기 35% 감소',
-      '다크모드 / 라이트모드 테마 시스템 구축',
-    ],
-    techStack: ['Next.js', 'TypeScript', 'D3.js', 'TanStack Table', 'Zustand'],
-    links: [
-      { label: 'GitHub', url: '#' },
-      { label: 'Demo', url: '#' },
-    ],
-  },
-  {
-    title: 'ShopEase',
-    description:
-      '모바일 퍼스트 이커머스 플랫폼. 상품 탐색부터 결제까지 전체 구매 플로우 구현.',
-    period: '2023.06 — 2024.01',
-    role: '프론트엔드 개발 (2인)',
-    highlights: [
-      'Intersection Observer 기반 무한 스크롤 상품 목록 구현',
-      'React Hook Form + Zod로 주문/결제 폼 검증 로직 구축',
-      'Lighthouse 성능 점수 45 → 92점 개선 (이미지 최적화, 지연 로딩)',
-      '카카오페이, 토스페이먼츠 PG 연동',
+      'Message Event를 활용한 네이티브-WebView 양방향 통신 구현',
+      'TanStack Query + Axios + flutter_secure_storage 조합으로 웹뷰 내 서버 상태 관리 및 보안 저장소 연동',
+      'flutter_secure_storage를 활용한 토큰 및 사용자 데이터의 안전한 영구 저장',
+      'Styled-components로 반응형 웹뷰 UI 구성, Flutter 네이티브와 통일된 디자인 시스템 적용',
     ],
     techStack: [
-      'React',
-      'TypeScript',
-      'Redux Toolkit',
+      'Flutter',
+      'React.js',
       'Styled Components',
-      'MSW',
+      'TanStack Query',
+      'Axios',
     ],
-    links: [{ label: 'GitHub', url: '#' }],
+    links: [
+      {
+        label: 'Google Play',
+        url: 'https://play.google.com/store/apps/details?id=com.bubaum.sosomarket.app&pcampaignid=web_share',
+      },
+    ],
   },
   {
-    title: 'DevLog',
-    description: '마크다운 기반 기술 블로그. SSG로 빌드하여 빠른 로딩 속도 제공.',
-    period: '2023.03 — 2023.05',
-    role: '개인 프로젝트',
+    title: '한국 외식산업협회 교육/협회/백오피스 통합 플랫폼',
+    description:
+      '협회·교육 사이트 & 백오피스 통합 개발 프로젝트. 단일 레포-다중 도메인 구조로 설계.',
+    period: '2023.10 — 재직중',
+    role: '프론트엔드 대리 · 비유바움 주식회사',
     highlights: [
-      'Next.js SSG + MDX로 빌드 시 정적 페이지 생성',
-      'SEO 메타태그 자동 생성, Google 검색 노출 최적화',
-      'AWS S3 + CloudFront + Route 53 배포 자동화',
-      'Giscus 기반 댓글 시스템 통합',
+      '화면의 80% 이상 프론트 단독 설계·구현',
+      '협회/교육 사이트를 단일 레포-다중 도메인 빌드 구조로 설계, 유지보수 시 중복 수정 파일 수 50% 이상 절감',
+      'GitHub Actions CI/CD 파이프라인으로 빌드·테스트·배포 자동화',
+      'TanStack Query 데이터 캐싱으로 페이지 로딩 속도 최적화 및 서버 부하 감소',
+      'Storybook으로 컴포넌트 문서화 및 개발 효율성 향상',
     ],
-    techStack: ['Next.js', 'MDX', 'Tailwind CSS', 'AWS'],
+    techStack: [
+      'Next.js',
+      'TypeScript',
+      'TailwindCSS',
+      'TanStack Query',
+      'Zustand',
+      'Axios',
+      'Storybook',
+      'GitHub Actions',
+    ],
     links: [
-      { label: 'GitHub', url: '#' },
-      { label: 'Blog', url: '#' },
+      { label: '협회 사이트', url: 'https://www.kofsia.or.kr/' },
+      { label: '교육 사이트', url: 'https://www.kfoodedu.or.kr/' },
     ],
+  },
+  {
+    title: '바움 P&S 자회사 웹사이트',
+    description: '자회사 소개 및 서비스 홍보를 위한 웹사이트 구축.',
+    period: '2023.10 — 재직중',
+    role: '프론트엔드 주임 · 비유바움 주식회사',
+    highlights: [
+      'React.js 및 TailwindCSS 기반의 프론트엔드 아키텍처 설계 및 화면 개발',
+      'Axios를 활용한 REST API 연동으로 동적 데이터 조회 기능 구현',
+      'Recoil을 이용한 전역 상태 관리 구조 설계로 코드 일관성 개선',
+      'TanStack Query를 적용해 서버 상태 캐싱 및 비동기 데이터 패칭 로직 표준화',
+    ],
+    techStack: [
+      'React.js',
+      'TailwindCSS',
+      'Axios',
+      'Recoil',
+      'TanStack Query',
+    ],
+    links: [{ label: '웹사이트', url: 'https://baumpns.com' }],
+  },
+  {
+    title: '한국 정품 금거래소 프론트/백오피스',
+    description:
+      '금·다이아몬드 상품 정보 및 거래 데이터의 실시간 조회·관리 플랫폼.',
+    period: '2023.10 — 재직중',
+    role: '프론트엔드 주임 · 비유바움 주식회사',
+    highlights: [
+      'React.js, Styled-components, SCSS를 활용해 반응형 웹 UI 설계·구현',
+      'Axios 기반 REST API 연동으로 상품 정보 및 거래 데이터의 실시간 조회·관리 구현',
+      'Recoil을 도입해 전역 상태 관리 구조 정비, 복잡한 상태 의존성 단순화',
+      '운영/관리자를 위한 백오피스 시스템 구축으로 상품 등록, 주문 및 고객 관리 통합 처리',
+    ],
+    techStack: [
+      'React.js',
+      'Styled Components',
+      'SCSS',
+      'Axios',
+      'Recoil',
+    ],
+    links: [{ label: '웹사이트', url: 'http://goldkoreadia.co.kr/' }],
+  },
+  {
+    title: '파트너 센터 백오피스 시스템',
+    description: '파트너 센터 운영을 위한 통합 백오피스 관리 시스템.',
+    period: '2022.10 — 2023.04',
+    role: '프론트엔드 개발자 · (주) OKPOS',
+    highlights: [
+      '공통 컴포넌트 설계 및 구현을 통한 재사용성 향상',
+      '회원 관리, 공지사항, 영업 대리점, 발주 신청, 제품 유지보수, 교육 관리 등 다수 시스템 개발',
+      'Chart.js 기반 데이터 시각화 및 그래프 구현',
+      'Props 기반 컴포넌트 구조화 및 유지보수성 개선',
+    ],
+    techStack: ['React.js', 'JavaScript', 'Chart.js'],
   },
 ]
 
@@ -205,10 +255,9 @@ export interface Education {
 
 export const EDUCATION: Education[] = [
   {
-    school: '한국대학교',
-    major: '컴퓨터공학과',
-    period: '2018.03 — 2022.08',
-    note: '학점 3.8/4.5',
+    school: '대전 공업 고등학교',
+    major: '전자기계 SMT 반도체과',
+    period: '졸업',
   },
 ]
 
