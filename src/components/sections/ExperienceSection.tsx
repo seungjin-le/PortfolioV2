@@ -1,5 +1,5 @@
 import { EXPERIENCES } from '@/constants/portfolio'
-import { SectionTitle } from './AboutSection'
+import SectionTitle from '@/components/ui/SectionTitle'
 import { Building2 } from 'lucide-react'
 
 const ExperienceSection = () => {

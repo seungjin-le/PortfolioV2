@@ -1,3 +1,5 @@
+import type { SkillCategory, Experience, Project, Education } from '@/types/portfolio'
+
 export const PROFILE = {
   name: '이승진',
   nameEn: 'Seungjin Lee',
@@ -15,16 +17,6 @@ export const PROFILE = {
     '배운 내용은 블로그에 정리해 지식을 관리하고, 비전공자로서 모르는 것을 인정하고 적극적으로 질문·학습하는 태도를 강점으로 삼고 있습니다.',
     'CI/CD 파이프라인 구축부터 단일 레포-다중 도메인 빌드 구조 설계까지, 프론트엔드 개발 전반을 다루어 보았았습니다.',
   ],
-}
-
-export interface Skill {
-  name: string
-  level: number // 1-5
-}
-
-export interface SkillCategory {
-  category: string
-  skills: Skill[]
 }
 
 export const SKILLS: SkillCategory[] = [
@@ -73,15 +65,6 @@ export const SKILLS: SkillCategory[] = [
   },
 ]
 
-export interface Experience {
-  company: string
-  role: string
-  period: string
-  description: string
-  achievements: string[]
-  techStack: string[]
-}
-
 export const EXPERIENCES: Experience[] = [
   {
     company: '비유바움 주식회사',
@@ -124,16 +107,6 @@ export const EXPERIENCES: Experience[] = [
     techStack: ['React.js', 'JavaScript', 'Chart.js'],
   },
 ]
-
-export interface Project {
-  title: string
-  description: string
-  period: string
-  role: string
-  highlights: string[]
-  techStack: string[]
-  links?: { label: string; url: string }[]
-}
 
 export const PROJECTS: Project[] = [
   {
@@ -215,13 +188,6 @@ export const PROJECTS: Project[] = [
     techStack: ['React.js', 'JavaScript', 'Chart.js'],
   },
 ]
-
-export interface Education {
-  school: string
-  major: string
-  period: string
-  note?: string
-}
 
 export const EDUCATION: Education[] = [
   {

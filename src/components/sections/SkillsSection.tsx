@@ -1,5 +1,5 @@
 import { SKILLS } from '@/constants/portfolio'
-import { SectionTitle } from './AboutSection'
+import SectionTitle from '@/components/ui/SectionTitle'
 
 const SkillsSection = () => {
   return (

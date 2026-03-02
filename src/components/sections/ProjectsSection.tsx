@@ -1,5 +1,5 @@
 import { PROJECTS } from '@/constants/portfolio'
-import { SectionTitle } from './AboutSection'
+import SectionTitle from '@/components/ui/SectionTitle'
 import { ExternalLink } from 'lucide-react'
 
 const ProjectsSection = () => {
