@@ -80,7 +80,7 @@ export const EXPERIENCES: Experience[] = [
     company: '비유바움 주식회사',
     role: '프론트엔드',
     period: '2023.10 — 2026.01',
-    description: '소상공인 대상 통합 관리 서비스, 협회/교육 플랫폼, 자회사 사이트 등 다수 프론트엔드 프로젝트 개발',
+    description: '소상공인 대상 통합 관리 서비스, 협회/교육 플랫폼, 자회사 사이트 등 개발 중단된 프로젝트 이외에도 다수 프론트엔드 프로젝트 개발',
     achievements: [
       'Flutter + React.js 기반 하이브리드 앱 개발 및 네이티브-WebView 양방향 통신 구현',
       'Next.js + TailwindCSS 기반 멀티 플랫폼(협회/교육 사이트 + 백오피스) 개발, 화면의 80% 이상 단독 설계·구현',
