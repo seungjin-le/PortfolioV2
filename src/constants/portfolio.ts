@@ -181,8 +181,6 @@ export const PROJECTS: Project[] = [
       'GitHub Actions',
       'React-hook-form',
       'Zod',
-      'Zustand',
-      'React-hook-form',
       'Jenkins',
     ],
     links: [
